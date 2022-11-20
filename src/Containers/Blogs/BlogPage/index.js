@@ -15,7 +15,6 @@ const url=props.match.params.url;
     return(
             <>
            <section className="section-padding"/>
-            
             <div className="section-padding">
             <div className="container">
             <div className="row">

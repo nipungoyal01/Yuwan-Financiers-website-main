@@ -1,11 +1,14 @@
 {
   "name": "yuwanfinanciers",
   "version": "0.1.0",
+  "homepage":"https://nipungoyal01.github.io/Yuwan-Financiers-website-main-gh-pages",
   "private": true,
   "engines": {
     "node": "14.17.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -13,7 +16,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
+      "react-app",  
       "react-app/jest"
     ]
   },
@@ -58,6 +61,7 @@
     "web-vitals": "^3.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.55.0",
     "sass-loader": "^7.3.1",

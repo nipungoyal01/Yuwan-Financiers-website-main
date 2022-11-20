@@ -17,7 +17,7 @@ function FeatureandBenefits(props) {
           </p>
           <p>
             {props.para2}
-          </p>
+          </p>  
         
           <div className="feature-Bullet-content pt-4">
           <div className="row">

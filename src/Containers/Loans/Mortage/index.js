@@ -6,7 +6,7 @@ import TestimonialGrid from "../../../Components/UI/Grids/TestimonialGrid";
 import anshulTest from "../../../img/anshul.jpg";
 import devenTest from "../../../img/deven.png";
 import nipunTest from "../../../img/nipun.png";
-//import AccordionCard from "../../../Components/UI/AccordionCard";
+import AccordionCard from "../../../Components/UI/AccordionCard/AccordionCards";
 import bannerimg1 from "../../../img/Bannerimg1.jpeg";
 import bannerimg2 from "../../../img/Bannerimg2.jpeg";
 import bannerimg3 from "../../../img/Bannerimg3.jpeg";
@@ -22,9 +22,9 @@ import styled from "styled-components";
 // import MobileCharges from "../../../Components/UI/AccordionCard/MobileCharges";
 
 import OverviewContent from "../../../Components/UI/OverviewContent";
-//import FeatureandBenefits from "../../../Components/UI/FeatureandBenefits";
+import FeatureandBenefits from "../../../Components/UI/FeatureandBenefits";
 import Elegibility from "../../../Components/UI/Elegibility";
-//import Charges from "../../../Components/UI/Charges";
+import Charges from "../../../Components/UI/Charges";
 
 
 /**
@@ -248,32 +248,7 @@ const Mortage = (props) => {
                 )}
                 {active === types[1] && (
                   <>
-                  <OverviewContent
-                      OverviewHeading="Yuwan Finance Mortage Loan Details"
-                      OverViewsubHeading="Know all about Mortage Loan offerings"
-                      para1="Grab every opportunity to boost your professional practice without 
-                    any delay with our Unsecured Professional Loans. This loan offering
-                    is designed to custom-fit the unique financial objectives of working
-                    professionals like Chartered Accountants, Company Secretaries and
-                    Doctors. So, whether your professional plans are to expand office,
-                    scale up operations, meet working capital requirements or achieve a
-                    set goal, our Professional Loans help you not just grow but also
-                    flourish your practice with a cost-effective financial solution."
-                      para2="Yuwan Finance partners you in your growth with quick and easy
-                    access to funds at the right time without the worries of providing
-                    any collateral or security. So now with your financial needs sorted,
-                    you can focus on your practice."
-                      OverviewHeading1="Why choose Yuwan Finance Mortage Loan?"
-                      Bulletp1="Higher professional loan amount of up to ₹30 Lakhs"
-                      Bulletp2="Unsecured professional loans against no security"
-                      Bulletp3="Flexibility to repay up to 60 months"
-                      Bulletp4="Competitive professional loan interest rates"
-                      Bulletp5="Zero pre-payment or foreclosure charges"
-                      Bulletp6="Quick approvals and easy online application"
-                      Bulletp7="Simple and minimal documentation process"
-                      Bulletp8="Complete transparency with no hidden costs"
-                    />
-                    {/* <FeatureandBenefits
+                     <FeatureandBenefits
                       FeatureHeading="Features & Benefits of a Mortage Loan"
                       FeaturesubHeading="Explore the best-in-class offerings"
                       para1="Whether you wish to fulfil a long-awaited dream or have an
@@ -288,7 +263,7 @@ const Mortage = (props) => {
                       Bulletp6="Quick approvals and easy online application"
                       Bulletp7="Simple and minimal documentation process"
                       Bulletp8="Complete transparency with no hidden costs"
-                    /> */}
+                    /> 
                   </>
                 )}
                 {active === types[2] && (

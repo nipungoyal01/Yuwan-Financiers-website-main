@@ -9,14 +9,12 @@ import Accordion from 'react-bootstrap/Accordion'
 const AccordionCards = (props) => {
     return (
         <>
-            <Card>
-                <Accordion.Toggle as={Card.Header} eventKey={props.eventKey}>
-                    {props.title}
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey={props.eventKey}>
-                    <Card.Body>{props.para}<br></br>{props.para1}</Card.Body>
-                </Accordion.Collapse>
-            </Card>
+            <Accordion.Item eventKey={props.eventKey}>
+            <Accordion.Header>{props.title}</Accordion.Header>
+            <Accordion.Body>
+            {props.para}
+            </Accordion.Body>
+        </Accordion.Item>
         </>
     )
 }
